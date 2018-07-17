@@ -19,6 +19,10 @@ module.exports = function(app) {
         }).then(function(files) {
             files = files.data;
             for (let f = 0; f < files.length; f++) {
+                let filenameSplit = files[f].filename.split('.');
+
+                if (filenameSplit[filenameSplit.length - 1] !== 'js') return; //not a JS file
+
                 context.github.repos.getContent({
                     owner: owner,
                     repo: repo,

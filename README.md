@@ -2,7 +2,13 @@
 
 > A GitHub App built with [Probot](https://github.com/probot/probot) that prettifies code in pull requests
 
-It currently only works for JavaScript files.
+## Usage
+
+Install the app by visiting [the app page](https://github.com/apps/probot-pretiffier).
+
+## Notes
+
+It currently only prettifies JavaScript files! Hopefully it will support more languages soon :)
 
 ## Setup
 
@@ -10,7 +16,7 @@ It currently only works for JavaScript files.
 # Install dependencies
 npm install
 
-# Run the bot 
+# Run the bot
 npm start
 ```
 
@@ -22,4 +28,4 @@ For more, check out the [Contributing Guide](CONTRIBUTING.md).
 
 ## License
 
-[MIT](LICENSE) © 2018 Shubham Jain <shu8@users.noreply.github.com> (NA)
+[MIT](LICENSE) © 2018 Shubham Jain <shu8@users.noreply.github.com>
