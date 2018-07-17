@@ -27,7 +27,7 @@ module.exports = function(app) {
                 }).then(function(file) {
                     let fileContentsBase64 = file.data.content.trim(),
                         fileContentsAscii = new Buffer(fileContentsBase64, 'base64').toString('ascii'),
-                        prettyFileContentsAscii = beautify(fileContentsAscii, config.js),
+                        prettyFileContentsAscii = config ? beautify(fileContentsAscii, config.js) : beautify(fileContentsAscii),
                         prettyFileContentsBase64 = new Buffer(prettyFileContentsAscii).toString('base64');
 
                     if (fileContentsAscii === prettyFileContentsAscii) return; //if already pretty, no update needed
