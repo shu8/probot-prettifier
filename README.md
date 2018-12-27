@@ -1,6 +1,6 @@
 # Prettifier
 
-> A GitHub App built with [Probot](https://github.com/probot/probot) that automatically prettifies code in pull requests
+> A GitHub App built with [Probot](https://github.com/probot/probot) that automatically prettifies code in pull requests using [Prettier](https://prettier.io/).
 
 ## Usage
 
