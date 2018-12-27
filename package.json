@@ -1,9 +1,9 @@
 {
-  "name": "Prettifier",
+  "name": "probot-prettifier",
   "version": "1.0.0",
-  "description": "A Probot app to prettify code in pull requests",
+  "description": "A Probot app to automatically prettify code in pull requests",
   "author": "Shubham Jain <shu8@users.noreply.github.com>",
-  "license": "ISC",
+  "license": "MIT",
   "repository": "https://github.com/shu8/probot-prettifier.git",
   "homepage": "https://github.com/shu8/probot-prettifier",
   "bugs": "https://github.com/shu8/probot-prettifier/issues",

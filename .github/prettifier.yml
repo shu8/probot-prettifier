@@ -1,4 +1,12 @@
-js:
- indent_size: 8
- space_in_paren: false
- end_with_newline: false
+commitMessage: "Prettify Code"
+
+printWidth: 100
+tabWidth: 2
+useTabs: false
+semi: true
+singleQuote: true
+jsxBracketSameLine: true
+jsxSingleQuote: false
+trailingComma: "es5"
+bracketSpacing: true
+arrowParens: "avoid"

@@ -1,14 +1,35 @@
 # Prettifier
 
-> A GitHub App built with [Probot](https://github.com/probot/probot) that prettifies code in pull requests
+> A GitHub App built with [Probot](https://github.com/probot/probot) that automatically prettifies code in pull requests
 
 ## Usage
 
-Install the app by visiting [the app page](https://github.com/apps/probot-pretiffier).
+Install the app by visiting [the app page](https://github.com/apps/probot-prettifier). You can choose which repositories it will run on from the app settings page.
 
-## Notes
+![Example commit history](https://user-images.githubusercontent.com/8850830/50480173-54ae4500-09d2-11e9-9197-e52fc2608d16.png)
 
-It currently only prettifies JavaScript files! Hopefully it will support more languages soon :)
+## Config
+
+Create a file `.github/prettifier.yml` with your config:
+
+```
+commitMessage: "Prettify Code"
+
+printWidth: 100
+tabWidth: 2
+useTabs: false
+semi: true
+singleQuote: true
+jsxBracketSameLine: true
+jsxSingleQuote: false
+trailingComma: "es5"
+bracketSpacing: true
+arrowParens: "avoid"
+```
+
+`commitMessage` defaults to `Prettify Code` but you can change this to whatever you want. 
+
+The rest of the settings come from [Prettier's options](https://prettier.io/docs/en/options.html) which is what this app uses. Please refer to their documentation to find a full list and explanation of the options.
 
 ## Setup
 
