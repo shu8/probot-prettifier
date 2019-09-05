@@ -1,8 +1,8 @@
-/*jshint esversion:6*/
 const prettier = require("prettier");
+
 module.exports = function (app) {
   app.on('pull_request', async function (context) {
-    const config = prettier.resolveConfig.sync('prettifierV2.yml', {
+    const config = prettier.resolveConfig.sync('prettifier.yml', {
       'config': '.github/prettifier.yml'
     }) || {};
     const commitMessage = config.commitMessage || 'Prettify Code';

@@ -49,4 +49,4 @@ For more, check out the [Contributing Guide](CONTRIBUTING.md).
 
 ## License
 
-[MIT](LICENSE) © 2018 Shubham Jain <shu8@users.noreply.github.com>
+[MIT](LICENSE) © 2019 Shubham Jain <shubham.jain@hotmail.com>
